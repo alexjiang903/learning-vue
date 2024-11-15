@@ -65,7 +65,7 @@ const AppContent = {
         //hook that runs after component created, but before being mounted by the DOM
         const interval = setInterval(() => {
             (this as ComponentOptions<DispData>).counter++;
-        }, 500); //schedules repeated exectuion of callback func every delay, syntax is setInterval(callback, delay).
+        }, 500); //schedules repeated exectuion of callback func every dela (500ms), syntax is setInterval(callback, delay).
         
         setTimeout(() => { //after 5 seconds, stop the counter from going up. 
             clearInterval(interval)
